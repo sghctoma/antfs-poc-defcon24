@@ -1,6 +1,8 @@
 Help, I've got ANTs!!!
 ======================
 
+Slides: http://www.slideshare.net/sghctoma/help-ive-got-ants
+
 hackant
 -------
 

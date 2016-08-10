@@ -1,0 +1,305 @@
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'data': b'a52484a8280a53162104', 'address': '0xc0683a8e90', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'data': b'111511941d0d1144404d', 'address': '0x845480d484', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'address': '0x3ba3472401', 'type': 'ping command'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'data': b'08100415424010404403', 'address': '0x80108d528', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'address': '0x3ba3472401', 'type': 'ping command'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'data': b'09002074504501004202', 'address': '0x9e61440114', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'data': b'91004a48901082292905', 'address': '0x84404c2e84', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'data': b'bbd9bf87afdd75fbe6f6', 'address': '0x70be6deff3', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'data': b'0ba232aa1889e0424404', 'address': '0xa8544bc60e', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'address': '0x3ba3472401', 'type': 'ping command'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'address': '0x3ba3472401', 'type': 'ping command'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'auth', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': False, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+
+#### Hosts request pairing
+{'auth_string_length': 0, 'host_serial': 123, 'type': 'auth command', 'auth_type': 'request pairing', 'address': '0x3ba3472401'}
+####
+
+#### Client (the 310XT) accepts pairing and sends it's passkey as a burst packet (also annotated, see below)
+{'auth_string_length': 8, 'response': 'accept', 'type': 'auth response', 'client_serial': 0, 'address': '0x3ba3472401'}
+####
+
+{'auth_string_length': 0, 'host_serial': 123, 'type': 'auth command', 'auth_type': 'request pairing', 'address': '0x3ba3472401'}
+
+#### The burst packet that contains the passkey (0x411b98a4fc7e009b)
+{'data': b'05a2411b98a4fc7e009b', 'address': '0x3ba3472401', 'type': 'unknown'}
+####
+
+{'auth_string_length': 0, 'host_serial': 123, 'type': 'auth command', 'auth_type': 'request pairing', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'address': '0x3ba3472401', 'type': 'ping command'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'data': b'a1cafbec6e931e924ac0', 'address': '0xafdfb0a1ff', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'data': b'3b7ffb56fa67a7fff3fd', 'address': '0xbf773f9ff7', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+
+#### Download Request for file at index 0 (index 0 always contains the directory file - basically a list of all files on the device)
+{'offset': 0, 'address': '0x3ba3472401', 'type': 'download request command', 'index': 0}
+####
+
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'data': b'05b200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'address': '0x3ba3472401', 'state': 'busy'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'offset': 272, 'address': '0x3ba3472401', 'type': 'download request command', 'index': 0}
+
+#### The Directory File content as burst packets
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05820000000010010000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920110000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05820000000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920100010c00000050', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'058200001d0000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920200010d00000030', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05823702000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05823602000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'059205008003020000d0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05828204000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'059206008003000000d0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05828204000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'059208008004160000b0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'0582ab050000c4e68625', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'pass-through', 'device_type': 57982, 'pairing': False, 'data': False, 'period': '4 Hz (8192)', 'address': '0x3ba3472401', 'manufacturer': 9606, 'state': 'link'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920a008004130000b0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920b008004140000b0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920c008004150000b0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'pass-through', 'device_type': 57984, 'pairing': False, 'data': False, 'period': '4 Hz (8192)', 'address': '0x3ba3472401', 'manufacturer': 9606, 'state': 'link'}
+{'data': b'05920d008008ffff00d0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05827302000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920e008009ffff0090', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05824800000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05920f00800affff0090', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05828d00000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05d200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05921000800bffff00d0', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05c200010000ffff0000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05824800000000000000', 'address': '0x3ba3472401', 'type': 'unknown'}
+{'data': b'05b2000000000000e3b3', 'address': '0x3ba3472401', 'type': 'unknown'}
+####
+
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'data': b'203912ad6805a338ded8', 'address': '0xbf8797970b', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'data': b'a4299d7a3c8b46883621', 'address': '0x74858b03ed', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'address': '0x3ba3472401', 'type': 'ping command'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'data': b'02444870004600405496', 'address': '0x5444460230', 'type': 'unknown'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'address': '0x3ba3472401', 'type': 'ping command'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+
+#### Disconnect Command from host that states the client should return to link state
+{'disconnect_type': 'return to link', 'time duration': 0, 'address': '0x3ba3472401', 'type': 'disconnect command', 'application duration': 0}
+####
+
+{'upload': False, 'type': 'client beacon', 'auth_type': 'passkey & pairing', 'pairing': False, 'data': True, 'period': '8 Hz (4096)', 'host_serial': 123, 'state': 'transport', 'address': '0x3ba3472401'}
+{'data': b'127c0fdae02461d42e89', 'address': '0x82c4b1d4b8', 'type': 'unknown'}
+{'data': b'84091500894978421040', 'address': '0x8c00080400', 'type': 'unknown'}
+{'data': b'07801406e48f491440a8', 'address': '0x14210d0252', 'type': 'unknown'}

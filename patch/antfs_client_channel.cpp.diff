@@ -1,0 +1,65 @@
+--- ANT-SDK_PC.3.5/ANT_LIB/software/ANTFS/antfs_client_channel.cpp	2016-04-18 16:28:10.000000000 +0200
++++ antfs_client_channel.cpp	2016-04-25 23:53:04.381250000 +0200
+@@ -3358,6 +3358,7 @@
+    }
+ }
+ 
++UCHAR ucPasswordSize;
+ ///////////////////////////////////////////////////////////////////////
+ void ANTFSClientChannel::DecodeAuthenticateCommand(UCHAR ucControlByte_, UCHAR *pucAuthCommand_)
+ {
+@@ -3491,40 +3492,36 @@
+          {
+             if ((ucControlByte_ & SEQUENCE_NUMBER_ROLLOVER) == 0) // initial packet
+             {
+-               UCHAR ucPasswordSize = pucAuthCommand_[AUTH_PASSWORD_LENGTH_OFFSET];   // Passkey length
++			   ucPasswordSize = pucAuthCommand_[AUTH_PASSWORD_LENGTH_OFFSET];   // Passkey length
+ 
+                #if defined(DEBUG_FILE)
+                   DSIDebug::ThreadWrite("ANTFSClientChannel::DecodeAuthenticateCommand(): Received AUTH passkey request.");
+                #endif
+ 
+-               if(ucPasswordSize != ucPassKeySize)
+-               {
+-                  bAcceptRequest = FALSE;   // Reject if lengths do not match
+-                  #if defined(DEBUG_FILE)
+-                     DSIDebug::ThreadWrite("ANTFSClientChannel::DecodeAuthenticateCommand(): Incorrect string size");
+-                  #endif
+-               }
+-               else
+-               {
+-                  ucPassKeyIndex = 0;
+-               }
++			   DSIDebug::ThreadPrintf("HCK: passkey length: %u", ucPasswordSize);
++			   ucPassKeyIndex = 0;
+             }
+             else
+             {
+                UCHAR ucCounter;
++			   char keypart[25] = { 0 };
+ 
++			   // NOTE: this kind of passkey checking is also susceptible to a timing 
++			   // attack. It comes in 8-byte bursts, and those 8 bytes are checked in
++			   // in a fail-as-soon-as-possible fashion. Have to check/write PoC.
+                for (ucCounter = 0; ucCounter < 8; ucCounter++)
+                {
+-                  if (ucPassKeyIndex >= ucPassKeySize)
+-                     break;
+-                  if (aucPassKey[ucPassKeyIndex++] != pucAuthCommand_[ucCounter])
+-                  {
+-                     bAcceptRequest = FALSE;  // Reject if passkeys are different
+-                  }
++				  if (ucPassKeyIndex++ >= ucPasswordSize)
++					   break;
++
++				  sprintf(keypart + 3 * ucCounter, "%02x,", pucAuthCommand_[ucCounter]);
+                }
++			   DSIDebug::ThreadPrintf("HCK: %s", keypart);
+             }
+             if (ucControlByte_ & SEQUENCE_LAST_MESSAGE)   // last packet
+             {
++			   bAcceptRequest = FALSE; // we don't really want the host to connect to us
++
+                if((stInitParams.ucAuthType != AUTH_COMMAND_PASSKEY) && (stInitParams.ucAuthType != AUTH_COMMAND_GOTO_TRANSPORT) && (ucPassKeySize == 0))
+                {
+                   bAcceptRequest = FALSE;

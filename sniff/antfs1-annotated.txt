@@ -1,0 +1,57 @@
+{'type': 'unknown', 'data': b'200200c80100506c0c50', 'address': '0x1410105153'}
+{'type': 'unknown', 'data': b'301115504044150104d4', 'address': '0xa0402f4c14'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'type': 'unknown', 'data': b'fffc0300180062929a08', 'address': '0x529c0c0007'}
+{'type': 'unknown', 'data': b'0ac0018280c208ac0322', 'address': '0xa000086ccc'}
+{'type': 'unknown', 'data': b'51860004400044222040', 'address': '0x4214408025'}
+{'type': 'unknown', 'data': b'000a095140549050a012', 'address': '0x4b4c010831'}
+{'type': 'unknown', 'data': b'82cba000207ac4130240', 'address': '0xa240220069'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'type': 'unknown', 'data': b'0008109820a824408008', 'address': '0x4693222808'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'type': 'unknown', 'data': b'a2a029509a0288820107', 'address': '0xa0022041a2'}
+{'type': 'unknown', 'data': b'008124e0481628048810', 'address': '0x82080003a2'}
+{'type': 'unknown', 'data': b'8b8010000420002000d2', 'address': '0xca182e0180'}
+{'type': 'unknown', 'data': b'10c5aa8922080c09ac28', 'address': '0x88a8880220'}
+{'type': 'unknown', 'data': b'0210b402523e28402104', 'address': '0xb300020800'}
+{'type': 'unknown', 'data': b'9004014580119989004d', 'address': '0x4740080000'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'type': 'unknown', 'data': b'52051330136049408004', 'address': '0x5013a14405'}
+{'type': 'unknown', 'data': b'71838cd314ac98c40200', 'address': '0x570b0987c0'}
+{'type': 'unknown', 'data': b'a0022c14ca2929e22910', 'address': '0x91298bcc00'}
+{'type': 'unknown', 'data': b'8160491310490400dc41', 'address': '0xb001004094'}
+{'type': 'unknown', 'data': b'570b59fad786a7d69e36', 'address': '0xbb008d0bef'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+{'manufacturer': 1, 'data': False, 'period': '8 Hz (4096)', 'device_type': 1446, 'auth_type': 'passkey & pairing', 'state': 'link', 'type': 'client beacon', 'pairing': False, 'upload': False, 'address': '0x3ba3472401'}
+
+#### Link Command from host that specifies on which frequency the communication should proceed
+{'address': '0x3ba3472401', 'type': 'link command', 'period': '8 Hz (4096)', 'frequency': 65, 'host_serial': 123}
+####
+
+{'type': 'unknown', 'data': b'928a08a003b034428a20', 'address': '0x8c00282aa1'}
+{'type': 'unknown', 'data': b'107041690015630b4005', 'address': '0x4902570211'}
+{'type': 'unknown', 'data': b'400541428b0010462092', 'address': '0x141a5114'}

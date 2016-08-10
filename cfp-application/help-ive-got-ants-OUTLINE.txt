@@ -1,0 +1,442 @@
+========
+Abstract
+========
+As stated in my bio, besides computer security I also love fligh simulators and
+mountain biking. Last year I gave a talk about hacking a flight simulator (among
+other games), it was only fitting to research something related to my other
+hobby too.
+
+Old day's bike speedometers have evolved quite a bit, and nowadays a lot of
+bikers (swmimmers, runners, <your preferred activity>ers) do their sport with
+tiny computers attached to them. These computers do much more than measuring
+speed: they have GPS, they can store your activities, can be your training
+buddy, and they can communicate with various sensors (cadence, power meter,
+heartrate monitors, you name it), mobile phones, each other, and with PCs.
+
+One of the comminication protocols used by these devices is ANT. Never heard of
+it? Not surprising, it is not very well known despite being utilized by a lot of
+gadgets including, but not limited to sport watches, mobile phones, weight
+scales, some medical devices, and even bycicle lights and radars.
+
+When I bought my first bike computer I rationalized it with thoughts like "this
+will help me navigate on the mountain", or "I can track how much I've
+developed", but deep down I knew the real reason was my curiousity about this
+lesser known, lesser researched protocol.
+
+One of my favourite kind of weaknesses are the ones caused by questionable
+design decisions, and can be spotted without actual hands-on experience with the
+product itself, just by reading the documentation. Well this is exactly what
+happened here, I had some attack vectors ready and waiting well before I
+received the actual device. To top it all, I've also found some implementation
+bugs after getting my hands on variuos Garmin devices.
+
+After a brief introduction to the ANT, ANT+ and ANT-FS protocols, I'll explain
+and demo both the implementation and the protocol weaknesses and reach the
+already suspected conclusion that ANT and the devices that use it are absolutely
+insecure: anybody can access your information, turn off your bike light, or even
+replace the firmware on your sport watch over the air.
+
+================
+Detailed Outline
+================
+
+1. Intro
+  1.1. Who?
+
+    I'll make a brief introduction:
+     - Tamas Szakaly from Hungary
+     - security researcher at an IT sec. company called PR-AUDIT Ltd.
+     - Cyberlympics 2012 European Champion
+     - OSCE, OSCP
+     - regular speaker at Hacktivity, and also gave a talk last year @
+       DEF CON 23. I'll probably mention that last year I was a
+       first-time speaker, but my first-time-speaker-shot got forgotten ;)
+     - a "binary guy": loves crackmes and copy protections
+     - no prior radio experience, but always wanted to learn, so ANT was a
+       perfect research topic
+
+  1.2. What, why?
+
+    In this part I'll give a brief introduction about what this talk is about,
+    and why I choose to do the research described here.  Basically this part
+    will elaborate on the abstract's content. I'll tell that I do MTB (I plan
+    to play a small collection of my biking videos in the background during this
+    bio part to make it interesting - folks love to see crashes, after all :) ),
+    and there are a lot of gadgets associated with this sport: bike computers
+    with GPS and a plethora of sensors, etc. I'll also mention that not just
+    bike gadgets use this protocol, but a lot of other devices, e.g. weight
+    scales, blood pressure monitors, heart reate monitors, other sport
+    equipments. A lot of mobile phones come with ANT chips too, so one can
+    receive data from their sport watches or directly from various sensors on
+    their mobile phones. [1] ANT is even used by a chat application called FireChat
+    to create mesh networks. [2]
+
+    I'll also tell at the beginning that after this intro part the talk will
+    consist of an introduction to the ANT, ANT+, and ANT-FS protocols,
+    highlighting some design errors that cause weaknesses in the protocols
+    themselves, than some live demos that show these weaknesses and some
+    implementation errors in Garmin devices (Edge 500, Forerunner 310XT,
+    Vivofit, and possibly others, depending on what I can get my hands on).
+
+2. The language we'll speak (a.k.a the protocols)
+  2.1 Plain old ANT
+
+    In this section I will explain what ANT is, and how it works: ANT is a
+    wireless network protocol that uses the 2.4GHz ISM band, and is designed to
+    be power efficient, therefore it's optimal for low-energy devices, various
+    sensors, gadgets, etc.  The participants in a network are called nodes, and
+    they communicate via mutually established channels. I'll show how an ANT
+    network channel is established between a master (e.g. a speed sensor) and a
+    slave (e.g. a bike computer) node, and what are the properties of a given
+    ANT channel, how device pairing works, and what "security" measures are
+    deployed. These measures include:
+
+     - network key: An excerpt from the documentation: "The network key is an
+       8-byte number that uniquely identifies a network and can provide a
+       measure of security and access control." The most important thing here is
+       that it *can* - but in practice, it won't. This is because of
+
+        a) There is a default key, and it is optional to change it. I have no
+           access to devices that actually use "pure" ANT (and not ANT+), so I
+           am not able to verify this, but based on other experiences in the
+           industry, I can guess that the number of implemtations that change it
+           is very-very few.
+
+        b) The majority of ANT devices use ANT+, and some of them ANT-FS, and
+           these two protocols have their associated network keys which can be
+           obtained after a registration to thisisant.com.
+
+     - the pairing bit: A slave can only pair to master if the value of the
+       pairing bit is the same for both the master and the slave channel. This
+       is trivial to circumvent: I can open a channel with the pairing bit set,
+       and another with not set.  I'll show some of my bike tracks recorded with
+       a Garmin Edge 500, and I'll point out that it contains some weird
+       heartrate data despite the fact that I have no heartrate monitor - it was
+       probably caused by some power lines, which shows that pairing can happen
+       without user intaraction. I'll also demo this by sending fake speed
+       values to either a Garmin Edge 500 or a Garmin Forerunner 310XT using an
+       ANT USB dongle and a software called ANTWareII [10] or SimulANT+ [11] 
+       that were released by Dynastream to aid developers.(DEMO#1)
+       To be fair: the pairing bit is not advertised as a security measure per
+       se in the documentation, but by common sense, only devices explicitly
+       paired should be able to communicate with each other.
+
+     - inclusion/exclusion lists: up to 4 channel IDs can be set per channel as
+       either an inclusion or exclusion list on a slave node. This means that
+       the slave can only associate with master nodes whose channel ID is on the
+       list (inclusion list) or not on the list (exclusion list). This way a
+       slave can control which devices are allowed to connect to it. The problem
+       is that if we know a whitelisted entry (e.g. we could sniff it), there is
+       nothing to prevent us to set that enabled channel ID. This feature is not
+       available on all ANT devices.
+
+     - single channel encryption: Some ANT devices enable the usage of 128 bit
+       AES-CTR encryption on the channel. How encryption key exchange is
+       performed is not really clear from the documentation, but appearantly it
+       does not matter, since you can't use encryption with ANT+, which is the
+       protocol the majority of ANT-enabled devices use.
+       Encryption also can't be used with shared channels, and requires advanced
+       burst messages, making it quite energy-unefficient. I'll quote an MIT
+       research paper [12] that aims to provide a low-energy MAC implementation
+       for ANT.
+
+     - white/blacklist: similar to inclusion/exclusion lists, but set on the
+       master nodes, and operates with encryption IDs rather than channel IDs.
+       Also not available on all ANT devices.
+
+    After explaining these "security" measures I'll show a table from the ANT
+    documentation that shows that inclusion/exclusion lists and encryption is
+    supported by only the ANT USB dongles, and just one ANT chip that is used in
+    devices.
+
+    Most of the information in this section comes from [3].
+
+  2.2 Atom Ant (ANT+)
+
+    I'll explain that ANT+ is a protocol on top of ANT that specifies various so
+    called device profiles (e.g. cadence meter, heartrate monitor, blood
+    pressure meter, sync, etc.). These device profiles are managed by Dynastream
+    (the creator of ANT), and govern some characteristics of the ANT connection
+    (frequency, channel period, network key, data formats, etc). I'll state
+    again that ANT+ is a managed ANT network with a publicly known (accessible
+    after a quick registration) network key.
+
+    Most of the information in this section comes from [4], and the other ANT+
+    device profiles on [5].
+
+  2.3 Let those insects carry documents! (ANT-FS)
+
+    One of the ANT+ profiles is "Sync" [6], which describes the ANT-FS protocol
+    [7], [8] used for file transfer. At this point I'll talk briefly about the FIT
+    (Flexible and Interoperable Data Transfer) protocol [9] that is the "official"
+    file system of ANT-FS. It can represent everything an ANT+ device might need
+    (e.g.  settings, user profiles, courses, recorded activities, etc.) I'll
+    talk briefly about my first unsuccessful attempt to hack my Forerunner 310XT
+    was to use the FIT file decoder from the FIT SDK and gave it to American
+    Fuzzy Lop. I've got some crashes, that did not seem exploitable, but tried
+    to upload the resulting FIT files anyway. The device did not crash, but the
+    ANT stack became unavailable for a few minutes. As it turned out, the watch
+    uses the embedded setup, where the entire ANT-FS stack - including the
+    handling of FIT files - is implemented on chip, and this is why the watch
+    itself did not crash. Btw, this is not something I'm letting go, one of my
+    future research areas is to find a way to run code on the ANT chip via
+    corrupted FIT files.
+    Back to ANT-FS itself. Dynastream's sales pitch: a secure, reliable file
+    transfer protocol that builds on the awesome ANT. As a side note, I'll
+    qute some rants from the Internet about file transfer to/from Garmin
+    devices - just to show how reliable this stuff is. After that, I'll show
+    why they (Dynastream) think the protocol is secure: it has authentication,
+    and also able to use encryption!! I've already explained how ANT's security
+    features are weak, I'll now show that ANT-FS's are too.
+    ANT-FS has three authentication modes, which I'll explain, show how they
+    work, and most importantly, how they can be hacked:
+
+    2.3.1 Come on in, whoever you might be (a.k.a. passthrough mode)
+
+      This mode is a NOP, it provides no authentication.  Basically the host
+      (e.g. your computer, which is configured as an ANT slave node) device asks
+      nicely, and the client (e.g. yout smart watch, which is configured as an
+      ANT master node) lets it in.
+
+    2.3.2 Hey, do we let this guy in? (a.k.a. pairing mode)
+
+      This is an authentication method that requires user interaction. One
+      device initiates the pairing, and sends its serial number and friendly
+      name. The other device displays a message about the pairing request.
+      Should the user accept the pairing, the authentication completes, and
+      usually a passkey is set that is used during any subsequent connection
+      attemp. There is not much to hack in this method, but I'll mention that:
+
+       a) of course the passkey can be sniffed from the air, but there are
+          easier methods to obtain it (next section). That said, I'll show an
+          ongoing project of mine that aims to build an ANT sniffer using RTL-SDR
+          and an MMDS down converter based on this project: [13] This is in a
+          very early stage right now, therefore I can't attach any PoC, but I
+          plan to make a demo of this too.
+
+       b) by displaying familiar device names/serial numbers, some users can
+          probably be social-engineered to accept pairing.
+
+    2.3.3 Yeah sure, I know you, you can come in (a.k.a. passkey mode) 
+
+      As explained previously, a successful pairing attempt results in
+      establishing a passkey which is used in further Communications. This
+      passkey can be as long as 255 bytes, so brute-forcing it is probably not
+      too practical, but in some situations (attacker can get near both an
+      ANT-FS client and a paired host, not necessarily the same time) it is
+      trivial to circumvent it using a "deferred" Man-in-the-Middle attack:
+      
+       - step 1: An attacker can pose as an ANT-FS host, and get the client's
+         serial number (Device ID), Friendly Name, Manufacturer ID and Device
+         Type - basically all the stuff needed to clone the device.
+       - step 2: Attacker opens a channel, and poses as client using the serial
+         number of the victim. The host recognizes a previously paired device
+         based on the serial number, and tries passkey authentication with
+         client (a.k.a. the attacker) by sending it the passkey.
+       - step 3: Attacker now has the passkey, and can act as a host again to
+         connect to the device.
+
+      It is important that these steps can be separated in time, this whole
+      thing does not have to happen at once.
+
+      I'll demo this by pairing my 310XT to Garmin Express [15] running on a
+      Windows machine, and than play this attack using another laptop. (DEMO#2)
+
+      My original plan was to use the ANT-FS PC Tools [18] since it can simulate
+      a host and a client too, and I was hoping it's debug mode logs the passkey
+      packets too. The first step went OK, posing as host wiht ANT-FS PC Host I
+      could get the serial number and other properties of the client 
+      (the 310XT), but the method of passkey checking made step2 impossible
+      though: the passkey comes in several 8 bytes packets, the first of which
+      (the so-called initialization packet) contains the passkey length. If this
+      does not check the passkey set in our simulated host, the authentication  
+      process stops. In order to make it work, I had to patch
+      ANT_WrappedLib.dll. Fortunately the source code can be downloaded as part
+      of the ANT-FS PC SDK [19], so I did not have to patch the binary. The diff
+      with my modifications is attached to the supporting files.
+  
+      After demoing this I'll also show the original passkey check algorithm,
+      and explain that in theory it is susceptible to a timing attack: the
+      passkey is checked byte-by-byte and fails as soon as it finds an incorrect
+      byte.
+     
+  2.4 So, it's all crap?
+
+    I'll summarize this first part: it is possible to build a secure-ish
+    wireless network with ANT, but only if you use pure ANT, purchase a
+    private network key (Dynastream will still know it!!!), and use chips that
+    support black/whitelists, inclusion/exclusion lists and encryption.
+
+3. We did it right, right? (a.k.a. implementation gotchas)
+  3.1 ANTs need no keys
+  
+    This is one of the implementation errors on the Garmin Forerunner 310XT:
+    somehow they left passthrough mode enabled, so anybody can access the files
+    stored on any 310XT's. I'll demo this by downloading the directory
+    structure of my 310XT (DEMO#3). I'll explain that even though it seems that
+    I'm bashing Garmin here, in reality I'm bashing Nordic Semiconductor: I'll
+    show photos of the inside of the 310XT (the FCC images weren't clear enough,
+    I had to disassemble the watch), and show that it uses an nRF24AP2 chip,
+    which implements the "Integrated ANT-FS Client" mode [14] - this means that
+    the entire ANT-FS stack is embedded onto the chip itself alongside the ANT
+    protocol stack, so bacically the ANT chip handles the file system. I've
+    found no API's the MCU could call to prevent this behaviour - the only
+    restriction the MCU could order is some kind of write protection ("directory
+    locking").
+
+  3.2 One key to ANT them all
+
+    ANT-FS has a nice little feature: OTA firmware updates. In fact, there are
+    several devices that does not even have any other connection methods, so
+    firmware updates have to happen via ANT-FS. How it is done is documented in
+    [1]. But of course Garmin devices does not use the method described there.
+    While I was reverse engineering the Garmin Express [16] software to learn
+    how a firmware update is done, I've found something rather interesting: two
+    methods:
+
+     - ComputeFactoryPairedDevicePasskey: generates the factory key for a given
+       serial number.
+     - HasFactoryPairedDevicePasskey: checks if a devices has a factory key.
+
+    This got me curious, since it would kinda make sense to have factory paired
+    devices for e.g. bundled heartrate monitors and sport watches, but
+    implementing something like this could go horribly wrong: and it did. I've
+    only had the chance to try the 310XT and the Vivofit yet (these gadgets are
+    crazy expensive), but both of them accepted the key that was generated using
+    the algorythm of GenerateFactoryKey. I'll demo this by first trying to
+    connect to my Vivofit using a random key (it will fail), and than connecting
+    with the generated factory key (which will succeed). (DEMO#4)
+    
+  3.3 Who signs firmwares anyway?
+    
+    This is not strictly an ANT issue, but the previously explained weaknesses
+    make it really dangerous. ANT-FS has a nice little feature: Over the Air
+    (OTA) firmware updates [15]. ANT-FS-capable Garmin devices implement this
+    feature, but not according to the documentation.
+    I've learned about the update process by reverse engineering the Garmin
+    Express [16] services. The updates come as .rgn files that have to be
+    unwrapped before uploading them to the device. The attached "firmware.py"
+    tool does this unwrapping. This unwrapped (stripped) image is than simply
+    uploaded to to ANT-FS index 1 as DEVICE file. This can be done with the
+    attached hackant.py tool like this:
+
+     $ hackant.py upload --index 1 --type device --file stripped_firmware.bin 
+    
+    As the title suggests, these fimwares are not signed, so it is fairly easy
+    to upload modified firmwares to these devices. The fact that these devices
+    can be accessed without authentication using methods described in 3.1 and
+    3.2, means that an attacker can upload a modified firmware remotely over the
+    air without any kind of authentication or user action (there are exceptions
+    to the latter - e.g. the Vivofit keeps ANT turned off to preserve battery
+    life, and the user has to actively request a sync to turn it on).
+
+    Despite the fact that turning on ANT manually is required for the Vivofit,
+    I've included a video of that device and not the 310XT. This is because of a
+    few different reasons:
+
+     - In all honesty, the CFP deadline os very-very close, and the Vivofit
+       firmware is much simpler to reverse and make modifications to that can be
+       shown as a PoC.
+     - Also, the Vivofit is much cheaper than the 310XT in case I brick it.
+     - While reversing the firmware, I've tried to find some checksum algo,
+       because I could not update the firmware to a modified one. I've found
+       two CRC16 tables, and two different CRC16 functions in the binary. It
+       turned out that the real checksum algo is quite a lot simpler (the sum of
+       all bytes from the firmware have to be 0), and these two CRC16 functions
+       are just part of some library, and they are not in use. But they use
+       direct addresses to the CRC16 tables, which made it possible to determine
+       what address the firmware is loaded to. I think it's interesting how a
+       path that ultimately turns out to be the wrong one could yield useful
+       results, and I'd like to talk about it a bit.
+     - If a heartrate monitor is in use, then ANT has to be turned on - I'm
+       working on finding out if this means that ANT-FS is operational also.
+       This would mean that user interaction isn't necessary after all. 
+     - There is an XML string in the binary that contain information about the
+       device, and two nodes have suspicious "XXXXXXXXXX" and "X" values. I've
+       found a function that replaces these placeholders with the Device ID and
+       a value determined by whether heartrate monitor is used or not,
+       respectively. ANT-FS operates on FIT files, but the Vivofit is also able
+       to communicate via BTLE with Garmin Connect on mobile phones. I've
+       dissected the Android version of Garmin Connect, and found methods that
+       download and process a "device XML". Based on the source code
+       (classes from com.garmin.android.apps.connectmobile.gdiadapter and
+       com.garmin.android.deviceinterface packages) I have a strong suspicion
+       that this whole process is susceptible to an XXE attack - I'm currently
+       waiting on a BTLE-capable mobile phone to test this. Please keep in mind
+       that this is only a possibility, I could've missed something, so don't
+       take this vulnerability as granted, but if this works out, I'll demo this
+       too.
+
+    I'm also working on reversing and modifying the 310XT firmware too, and I'd
+    very much like to demo something cooler than displaying some custom message.
+
+    To summarize this part: I'll show how OTA firmware updates work on Garmin
+    devices, and I'll also explain what I had to reverse to learn about the
+    process. I'll demo an OTA firmware update using either passthrough or
+    factory passkey authentication on the Vivofit (DEMO#5). There is a chance for
+    two more demos too that currently are work in progress:
+
+     - XXE Garmin Connect using a modified Vivofit firmware.
+     - OTA fimware update on a Garmin 310XT without any user interaction.
+    
+4. Outro
+
+  I will summarize the weaknesses and attacks shown during the talk, and will
+  also make the tools used available on GitHub.
+    
+References
+==========
+
+Please keep in mind that some of the resources below are accessible only
+after registration!
+
+[1] ANT Directory - https://www.thisisant.com/directory
+[2] FireChat Adopts ANT Wireless To Enhance Peer-To-Peer Smartphone Connections - http://www.prnewswire.com/news-releases/firechat-adopts-ant-wireless-to-enhance-peer-to-peer-smartphone-connections-300221132.html
+[3] ANT Message Protocol and Usage - https://www.thisisant.com/resources/ant-message-protocol-and-usage/
+[4] ANT+ Common Pages - https://www.thisisant.com/resources/common-data-pages/
+[5] THIS IS ANT - https://www.thisisant.com/developer/resources/downloads
+[6] ANT+ Device Profile - Sync - https://www.thisisant.com/resources/ant-device-profile-sync/
+[7] ANT-FS Technical Specification - https://www.thisisant.com/resources/ant-fs-technical-specification/
+[8] ANT-FS Reference Design User Manual - https://www.thisisant.com/resources/ant-fs-reference-design-user-manual/
+[9] FIT SDK - https://www.thisisant.com/resources/fit/
+[10] ANTWareII - https://www.thisisant.com/resources/antware-ii/
+[11] SimulANT+ - https://www.thisisant.com/resources/simulant-1/
+[12] The Internet of Insecure Things - https://courses.csail.mit.edu/6.857/2016/files/camelosa-greene-loving-otgonbaatar.pdf
+[13] Sniffing and decoding NRF24L01+ and Bluetooth LE packets for under $30 - http://blog.cyberexplorer.me/2014/01/sniffing-and-decoding-nrf24l01-and.html
+[14] Integrated ANT-FS Interface Control Document - https://www.thisisant.com/resources/integrated-ant-fs-interface-control-document/
+[15] Over the Air Firmware Updates using ANT-FS - https://www.thisisant.com/resources/ant-an-over-the-air-firmware-updates-using-ant-fs/
+[16] Garmin Express - http://software.garmin.com/en-US/express.html
+[17] Garmin Connect - https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile&hl=en
+[18] ANT-FS PC Tools - https://www.thisisant.com/resources/ant-fs-pc-tools/
+[19] ANT PC SDK - https://www.thisisant.com/resources/ant-windows-library-package-with-source-code/
+
+================
+Supporting Files
+================
+
+The supporting_files.zip archive attached to this submission contains the following
+files:
+
+ - firmware.py: A tool to extract the firmware binary the devices accept from
+   the RGN file format Garmin distributes them. I'll use this tool for demo #5.
+ - fixcrc.py: A tool to fix the checksum of modified Garmin firmwares. This will
+   be merged into firmware.py in the near future.
+ - hackant.py: A tool to demo various ANT features (the three authentication
+   modes, factory key generation, file upload/download, firmware udpate). This
+   is used for demos #3, #4 and #5. This script requires openant
+   (https://github.com/Tigge/openant)!
+ - ant_fs_manager.py.diff: Patch for OpenANT that implements the "passthrough"
+   authentication mode.
+ - antfs_client_channel.cpp.diff: The patch for ANT_WrappedLib.dll that makes
+   logging passkeys sent by ANT-FS hosts possible.
+ - demo3-passthrough.asciinema: Asciinema (https://asciinema.org/) recording of
+   DEMO#3 where the directory structure of a Garmin Forerunner 310XT is
+   downloaded using the "passthrough" authentication mode.
+ - demo4-factorykey.asciinema: Asciinema recording of DEMO#4 where two passkeys
+   are tried to connect to a Garmin Vivofit: an arbitrary one (which fails) and
+   one generated using the factory key method (which succeeds).
+ - ant-sniffing-poc.png: it's just a montage of SDR#, ANTWareII, and my 
+   ANT-sniffing equipment (RTL-SDR dongle + MMDS downconverter) as a proof of
+   concept (as I've written before, this project is in a very early stage).
+
+

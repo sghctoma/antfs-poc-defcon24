@@ -1,0 +1,67 @@
+Update to Section "2.3.2 Hey, do we let this guy in? (a.k.a. pairing mode)"
+===========================================================================
+
+In my CFP i've stated that my ANT sniffing project is in an early state, and
+that I can't attach any proof of concept. The project have evolved since to a
+demonstratable state: I've written two programs (both are included in the
+attached supporting-files-UPDATES.zip file):
+
+ - shockburst.c, packets.h: a simple C program that gets raw 16 bit signed IQ
+   data (e.g. from the output of rtl_fm) from standard input, and detects
+   ShockBurst packets. These packets are than written to standard out as hex
+   pairs. The program should compile with any known compiler (Clang 3.8.0 and
+   GCC 4.8.5 tested on HardenedBSD 11-CURRENT, and Clang 3.7.0 tested on Void
+   Linux):
+
+   $ clang shockburst.c -o shockburst
+
+ - anteater.py: a Python program that works on shockburst's output, and parses
+   ANT-FS packets, which are written to standard output as Python dictionaries
+   (this will eventually change to JSON objects)
+
+I've also uploaded raw capture files to
+https://www.dropbox.com/s/1k4bscp3ef86qe5/anteater.zip?dl=0, that contains an
+ANT-FS pairing and directory download between a Garmin 310XT and ANT-FS PC Host.
+The file is a password protected .zip archive, the password being "2no0C1d3f6".
+There are two files in the archive:
+ 
+ - antfs1.cap: these are the packets until the host sends a so-called Link
+   Command. This specifies a new frequency, and my tools can't switch to that
+   automatically yet - this is why the capture is in two parts.
+ - antfs2.cap: the pairing and directory downloading parts of the process.
+
+These files were captured using rtl_fm:
+
+ - $ rtl_fm -f451.9m -s 2000k -g 0 -p 16 > antfs1.cap
+ - $ rtl_fm -f466.9m -s 2000k -g 0 -p 16 > antfs2.cap
+
+Note that the given frequencies are 1998Mhz less than the actual frequencies
+(2450MHz and 2466Mhz respectively) - this is because of the MMDS downconverter.
+
+There are also two .txt files (antfs1-annotated.txt and antfs2-annotated.txt) in
+the supporting-files-UPDATES.zip archive that were produced from the above .cap
+files, and the interesting packets are annotated (with "####" prefix). The .txt
+files were generated using these commands:
+
+ - $ cat antfs1.cap|./shockburst|./anteater.py
+ - $ cat antfs2.cap|./shockburst|./anteater.py
+
+Update to Section "3.3 Who signs firmwares anyway?"
+===================================================
+
+In my CFP I've stated that I have a suspicion that Garmin Connect on Android is
+susceptible to an XXE attack, and I'm waiting on a BTLE-capable mobile phone to
+try this. I've finally gotten my hands on such a phone, so I could try this
+attack out. I've replced the XML string in the Vivofit firmware with one that
+contains an External Parameter Entity which tries to connect to a server under
+my control. I've flashed this modified firmware to my Vivofit, and tried to pair
+it with my phone. 
+It failed, but a connection was made to my server! But the IP that made the
+connection was certainly not my home IP, and also the user agent was Java 1.7 -
+turned out that I've not XXE-d my phone, but one of Garmin's servers. So I was
+wrong, Garmin Connect could not be XXE-d after all, but I think this is a very
+interesting way to find a very serious bug in a vendor's Internet-facing web
+services, and it makes a nice story :)
+I've later confirmed the XXE using Burp Suite, and I've inluded two screenshots
+of it (one of Burp, and from my server running nc) in the supporting files.
+

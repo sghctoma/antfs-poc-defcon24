@@ -2,6 +2,7 @@ Help, I've got ANTs!!!
 ======================
 
 Slides: http://www.slideshare.net/sghctoma/help-ive-got-ants
+Videos: https://www.youtube.com/playlist?list=PLO0QV3AGuqc9ikxcKnfnUsVG6IUHSpNJ3
 
 hackant
 -------
